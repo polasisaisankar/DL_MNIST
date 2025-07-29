@@ -40,3 +40,8 @@ model.evaluate(X_test,y_test)
 model.compile(optimizer='adam',loss='categorical_crossentropy')
 model.fit(X_train,y_train,epochs=50,batch_size=64)
 model.evaluate(X_test,y_test)
+
+
+#optimizer = 'sgd', batch_size = 64
+model.compile(optimizer='sgd',loss='categorical_crossentropy',metrics=['accuracy'])
+model.fit(x_train,y_train,epochs=50,batch_size=32)
